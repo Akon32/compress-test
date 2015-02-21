@@ -17,11 +17,11 @@ object Main extends App {
 		(data.toSeq,inds)
 	}
 	
-	val src = scala.io.Source.stdin.getLines.toSeq
+	val src = scala.io.Source.stdin.getLines.toBuffer
 	val (data,inds)=encode(src)
-	println("data")
+	println(" data")
 	data foreach println
-	println("inds")
+	println(" inds")
 	inds foreach println
 //	println(s"encoded: data=$data inds=$inds")
 //	println(s"decoded: ${inds map data}")
